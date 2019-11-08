@@ -1,0 +1,70 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+html,body{
+  height: 100%;
+}
+
+body{
+  background: url("https://images.unsplash.com/photo-1573065370811-cfa5c34361de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2742&q=80") no-repeat center center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login{
+  width: 500px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 10px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 60px #000;
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form{
+  width: 400px;
+  color: #fff;
+}
+
+.form h2{
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
+.form .group{
+  margin-bottom: 15px;
+}
+.form .group label{
+  line-height: 2.5;
+}
+.form .group input{
+  padding: 0 10px;
+  width: 380px;
+  line-height: 3;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+.form .btn-group{
+  margin-top: 40px;
+  font-size: 0;
+}
+.form .btn{
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #6ab4fe;
+  width: 190px;
+  padding: 5px 0px;
+  color: #fff;
+}
+.form .btn + .btn{
+  margin-left: 20px;
+}
