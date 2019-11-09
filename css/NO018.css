@@ -1,0 +1,76 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+body,html{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message{
+  width: 500px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #444;
+}
+.user{
+  display: flex;
+  margin-bottom: 20px;
+}
+.local{
+  justify-content: flex-end;
+}
+.user .avatar{
+  text-align: center;
+  flex-shrink: 0;
+}
+.user .pic{
+  width: 60px;
+}
+.user .pic img{
+  border-radius: 50%;
+  width: 100%;
+  vertical-align: middle;
+}
+.user .txt{
+  background-color: #aaa;
+  padding: 16px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.remote .txt{
+  margin-left: 20px;
+  margin-right: 80px;
+  background-color: #eee;
+  color: #a1b4c5;
+}
+.local .txt{
+  margin-right: 20px;
+  margin-left: 80px;
+  order: -1;
+  background-color: #3e92cc;
+  color: #fff;
+}
+.remote .txt:before,.local .txt:before{
+  content: "";
+  position: absolute;
+  top: 20px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.remote .txt:before{
+  border-right: 10px solid #eee;
+  left: -10px;
+}
+.local .txt:before{
+  border-left: 10px solid #3e92cc;
+  right: -10px;
+}
