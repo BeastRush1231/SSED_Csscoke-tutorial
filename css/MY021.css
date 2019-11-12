@@ -1,0 +1,82 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.banner{
+  height: 700px;
+  background: url("https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1627&q=80") center top / cover;
+}
+.sec .container{
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  padding: 100px 0;
+  position: relative;
+  z-index: 2;
+}
+.sec .item{
+  width: 570px;
+  margin: 0 15px;
+}
+.sec .item h2{
+  margin-bottom: 1.3em;
+}
+.sec .item p{
+  line-height: 1.7;
+  margin-bottom: 1.6em;
+}
+.sec{
+  position: relative;
+}
+.sec:after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  left: 50%;
+  top: 0;
+  transform: translateX(-30%) translateY(-50%);
+  border-radius: 50%;
+  box-shadow: 178px 0px 0px 30px #fff,
+              327px 34px 0px 20px #fff,
+              480px 9px 0px 60px #fff,
+              690px 71px 0px 60px #fff,
+              880px 0 0 89px #fff,
+
+              -178px 0px 0px 30px #fff,
+              -327px 34px 0px 20px #fff,
+              -480px 9px 0px 60px #fff,
+              -690px 71px 0px 60px #fff,
+              -880px 0 0 89px #fff,
+              -1100px 50px 0 89px #fff,
+              
+              100px 0px 0 56px rgba(0,0,10,.5),
+              298px 10px 0 56px rgba(0,0,10,.5),
+              540px -40px 0 50px rgba(0,0,10,.5),
+              740px -30px 0 30px rgba(0,0,10,.5),
+              880px -100px 0 80px rgba(0,0,10,.5),
+              1000px 0px 0 80px rgba(0,0,10,.5),
+
+              -60px 0px 0 56px rgba(0,0,10,.5),
+              -298px 10px 0 56px rgba(0,0,10,.5),
+              -540px -40px 0 50px rgba(0,0,10,.5),
+              -740px -30px 0 30px rgba(0,0,10,.5),
+              -780px -70px 0 80px rgba(0,0,10,.5),
+              -1200px 0px 0 80px rgba(0,0,10,.5);
+}
+
+.sec:before{
+  content: "";
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+}
