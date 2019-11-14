@@ -1,0 +1,41 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.container{
+  position: relative;
+  width: 1200px;
+  margin: auto;
+}
+.container h1{
+  font-size: 40px;
+  width: 400px;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: #eee;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.container .txt{
+  column-count: 2;
+  column-gap: 460px;
+}
+.container p{
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+}
+.container p:first-child::first-letter{
+  font-size: 42px;
+  float: left;
+  margin-right: 6px;
+}
