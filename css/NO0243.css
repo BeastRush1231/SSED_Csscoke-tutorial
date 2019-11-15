@@ -1,0 +1,46 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+.wrap{
+  margin: 100px 0;
+}
+.container{
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  box-shadow: 0 0 20px #ccc;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.container h1{
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 200px;
+  padding-left: 15px;
+  color: #ddd;
+  position: absolute;
+  left: 0px;
+  top: -110px;
+  line-height: 1.5em;
+  z-index: -1;
+}
+.container .txt{
+  width: 800px;
+  box-sizing: border-box;
+  column-count: 2;
+  column-gap: 30px;
+  padding: 15px;
+}
+.container .txt p{
+  margin-bottom: 1em;
+}
+.container .txt p:first-child:first-letter{
+  font-size: 40px;
+  float: left;
+  margin-right: 10px;
+}
